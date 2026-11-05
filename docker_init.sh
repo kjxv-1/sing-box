@@ -4,7 +4,7 @@ set -e
 
 WORK_DIR=/sing-box
 PORT=$START_PORT
-SING_BOX_CORE_REPO='kjxv/sing-box'
+SING_BOX_CORE_REPO='kjxv-1/sing-box'
 STABLE_RELEASE_TAG='v1.3.14'
 SING_BOX_CORE_VERSION='1.15.0-alpha.13'
 RELEASE_BASE="https://github.com/${SING_BOX_CORE_REPO}/releases/download"

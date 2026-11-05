@@ -21,7 +21,7 @@ PROTOCOL_LIST=("XTLS + reality" "hysteria2" "tuic" "ShadowTLS" "shadowsocks" "tr
 NODE_TAG=("xtls-reality" "hysteria2" "tuic" "ShadowTLS" "shadowsocks" "trojan" "vmess-ws" "vless-ws-tls" "h2-reality" "grpc-reality" "anytls" "naive")
 CONSECUTIVE_PORTS=${#PROTOCOL_LIST[@]}
 CDN_DOMAIN=("skk.moe" "ip.sb" "time.is" "cfip.xxxxxxxx.tk" "bestcf.top" "cdn.2020111.xyz" "xn--b6gac.eu.org" "cf.090227.xyz")
-SING_BOX_CORE_REPO='kjxv/sing-box'
+SING_BOX_CORE_REPO='kjxv-1/sing-box'
 STABLE_RELEASE_TAG='v1.3.14'
 SING_BOX_CORE_VERSION='1.15.0-alpha.13'
 SING_BOX_CORE_RELEASE_BASE="https://github.com/${SING_BOX_CORE_REPO}/releases/download"
@@ -4450,7 +4450,7 @@ create_shortcut() {
   cat > ${WORK_DIR}/sb.sh << EOF
 #!/usr/bin/env bash
 
-bash <(wget --no-check-certificate -qO- https://raw.githubusercontent.com/kjxv/sing-box/${STABLE_RELEASE_TAG}/sing-box.sh) "\$@"
+bash <(wget --no-check-certificate -qO- https://raw.githubusercontent.com/kjxv-1/sing-box/${STABLE_RELEASE_TAG}/sing-box.sh) "\$@"
 EOF
   chmod +x ${WORK_DIR}/sb.sh
   ln -sf ${WORK_DIR}/sb.sh /usr/bin/sb
