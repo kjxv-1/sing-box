@@ -1415,7 +1415,7 @@ check_system_info() {
 # 获取 sing-box 最新版本
 get_sing_box_version() {
   # FORCE_VERSION 用于在 sing-box 某个主程序出现 bug 时，强制为指定版本，以防止运行出错
-  local FORCE_VERSION=$(wget --no-check-certificate --tries=2 --timeout=3 -qO- ${GH_PROXY}https://raw.githubusercontent.com/kjxv/sing-box/refs/heads/main/force_version | sed 's/^[vV]//g; s/\r//g')
+  local FORCE_VERSION=$(wget --no-check-certificate --tries=2 --timeout=3 -qO- ${GH_PROXY}https://raw.githubusercontent.com/kjxv-1/sing-box/refs/heads/main/force_version | sed 's/^[vV]//g; s/\r//g')
   if grep -q '.' <<< "$FORCE_VERSION"; then
     local RESULT_VERSION="$FORCE_VERSION"
   else
@@ -4456,7 +4456,7 @@ create_shortcut() {
   cat > ${WORK_DIR}/sb.sh << EOF
 #!/usr/bin/env bash
 
-bash <(wget --no-check-certificate -qO- https://raw.githubusercontent.com/kjxv/sing-box/main/sing-box.sh) "\$@"
+bash <(wget --no-check-certificate -qO- https://raw.githubusercontent.com/kjxv-1/sing-box/main/sing-box.sh) "\$@"
 EOF
   chmod +x ${WORK_DIR}/sb.sh
   ln -sf ${WORK_DIR}/sb.sh /usr/bin/sb
