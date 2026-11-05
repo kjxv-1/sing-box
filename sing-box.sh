@@ -22,7 +22,7 @@ NODE_TAG=("xtls-reality" "hysteria2" "tuic" "ShadowTLS" "shadowsocks" "trojan" "
 CONSECUTIVE_PORTS=${#PROTOCOL_LIST[@]}
 CDN_DOMAIN=("skk.moe" "ip.sb" "time.is" "cfip.xxxxxxxx.tk" "bestcf.top" "cdn.2020111.xyz" "xn--b6gac.eu.org" "cf.090227.xyz")
 STABLE_RELEASE_TAG='v1.3.28-vedio'
-RELEASE_BASE='https://github.com/kjxv/sing-box/releases/download'
+RELEASE_BASE='https://github.com/kjxv-1/sing-box/releases/download'
 DEPENDENCY_RELEASE_BASE="${RELEASE_BASE}/${STABLE_RELEASE_TAG}"
 SUBSCRIBE_CLASH_URL="${DEPENDENCY_RELEASE_BASE}/client-template-clash"
 SUBSCRIBE_CLASH2_URL="${DEPENDENCY_RELEASE_BASE}/client-template-clash2"
@@ -497,7 +497,7 @@ check_cdn() {
   local PROXY CODE PID CMD _url P1 P2 CODE_RAW CODE_REL
   local PIDS=()
   # 探测点1：raw 域（脚本及订阅模板文件下载路径）
-  local RAW_URL="https://raw.githubusercontent.com/kjxv/sing-box/${STABLE_RELEASE_TAG}/sing-box.sh"
+  local RAW_URL="https://raw.githubusercontent.com/kjxv-1/sing-box/${STABLE_RELEASE_TAG}/sing-box.sh"
   # 探测点2：github releases 域（sing-box / jq / cloudflared 等二进制真实下载路径，
   # 探测同一固定版的自有附件。raw 域可达不代表 releases 域可达，任一域失败都使用代理。
   local REL_URL="${DEPENDENCY_RELEASE_BASE}/cloudflared-linux-amd64"
@@ -6112,7 +6112,7 @@ create_shortcut() {
   cat > ${WORK_DIR}/sb.sh << EOF
 #!/usr/bin/env bash
 
-bash <(wget --no-check-certificate -qO- https://raw.githubusercontent.com/kjxv/sing-box/${STABLE_RELEASE_TAG}/sing-box.sh) "\$@"
+bash <(wget --no-check-certificate -qO- https://raw.githubusercontent.com/kjxv-1/sing-box/${STABLE_RELEASE_TAG}/sing-box.sh) "\$@"
 EOF
   chmod +x ${WORK_DIR}/sb.sh
   ln -sf ${WORK_DIR}/sb.sh /usr/bin/sb

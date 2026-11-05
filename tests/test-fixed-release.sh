@@ -54,6 +54,6 @@ else:
 done
 
 create_shortcut || true
-grep -Fq "https://raw.githubusercontent.com/kjxv/sing-box/$STABLE_RELEASE_TAG/sing-box.sh" "$WORK_DIR/sb.sh"
+grep -Fq "https://raw.githubusercontent.com/kjxv-1/sing-box/$STABLE_RELEASE_TAG/sing-box.sh" "$WORK_DIR/sb.sh"
 grep -Fq '"$@"' "$WORK_DIR/sb.sh"
 echo 'PASS: fixed core, TUN/no-TUN JSON generation, mirrored rule URL, tagged shortcut'

@@ -5,7 +5,7 @@ set -e
 WORK_DIR=/sing-box
 PORT=$START_PORT
 STABLE_RELEASE_TAG='v1.3.28-vedio'
-RELEASE_BASE='https://github.com/kjxv/sing-box/releases/download'
+RELEASE_BASE='https://github.com/kjxv-1/sing-box/releases/download'
 DEPENDENCY_RELEASE_BASE="${RELEASE_BASE}/${STABLE_RELEASE_TAG}"
 SING_BOX_CORE_VERSION='1.15.0-alpha.13'
 SUBSCRIBE_CLASH_URL="${DEPENDENCY_RELEASE_BASE}/client-template-clash"

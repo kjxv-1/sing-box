@@ -31,7 +31,7 @@
 
 | 项目 | 固定内容 |
 | --- | --- |
-| Release / 标签 | [v1.3.28-vedio](https://github.com/kjxv/sing-box/releases/tag/v1.3.28-vedio) |
+| Release / 标签 | [v1.3.28-vedio](https://github.com/kjxv-1/sing-box/releases/tag/v1.3.28-vedio) |
 | Sing-box 内核 | `1.15.0-alpha.13`，从本仓库内核镜像 Release 下载 |
 | cloudflared | `2026.10.5` |
 | 部署附件 | 本 Release 提供客户端模板、jq、qrencode、cloudflared、WARP 注册脚本、OpenAI 规则集及 Docker s6-overlay |
@@ -40,13 +40,13 @@
 **本 Release 的固定部署命令：**
 
 ```bash
-bash <(wget -qO- https://raw.githubusercontent.com/kjxv/sing-box/v1.3.28-vedio/sing-box.sh)
+bash <(wget -qO- https://raw.githubusercontent.com/kjxv-1/sing-box/v1.3.28-vedio/sing-box.sh)
 ```
 
 **中文极速安装：**
 
 ```bash
-bash <(wget -qO- https://raw.githubusercontent.com/kjxv/sing-box/v1.3.28-vedio/sing-box.sh) -l
+bash <(wget -qO- https://raw.githubusercontent.com/kjxv-1/sing-box/v1.3.28-vedio/sing-box.sh) -l
 ```
 
 `main` 继续用于同步上游；视频和文章应使用以上带标签的链接。默认部署所需的项目附件均从本仓库下载，系统软件包仍来自系统软件源，Cloudflare 等在线服务仍需联网。手动增加的第三方规则集、BBR、ArgoX、sba、TCP Brutal 等附加工具不在默认附件镜像范围内。
@@ -222,7 +222,7 @@ bash <(wget -qO- https://raw.githubusercontent.com/kjxv/sing-box/v1.3.28-vedio/s
 
 * 首次运行
 ```
-bash <(wget -qO- https://raw.githubusercontent.com/kjxv/sing-box/v1.3.28-vedio/sing-box.sh)
+bash <(wget -qO- https://raw.githubusercontent.com/kjxv-1/sing-box/v1.3.28-vedio/sing-box.sh)
 ```
 
 * 再次运行
@@ -267,17 +267,17 @@ sb
 ### 方式1. 最快的安装方式：自动补充所有参数
 #### 中文
 ```
-bash <(wget -qO- https://raw.githubusercontent.com/kjxv/sing-box/v1.3.28-vedio/sing-box.sh) -l
+bash <(wget -qO- https://raw.githubusercontent.com/kjxv-1/sing-box/v1.3.28-vedio/sing-box.sh) -l
 ```
 
 #### 英文
 ```
-bash <(wget -qO- https://raw.githubusercontent.com/kjxv/sing-box/v1.3.28-vedio/sing-box.sh) -k
+bash <(wget -qO- https://raw.githubusercontent.com/kjxv-1/sing-box/v1.3.28-vedio/sing-box.sh) -k
 ```
 
 ### 方式2. KV 配置文件，内容参照本库里的 config.conf
 ```
-bash <(wget -qO- https://raw.githubusercontent.com/kjxv/sing-box/v1.3.28-vedio/sing-box.sh) -f config.conf
+bash <(wget -qO- https://raw.githubusercontent.com/kjxv-1/sing-box/v1.3.28-vedio/sing-box.sh) -f config.conf
 ```
 
 ### 方式3. KV 传参，举例
@@ -287,7 +287,7 @@ bash <(wget -qO- https://raw.githubusercontent.com/kjxv/sing-box/v1.3.28-vedio/s
 <br>
 
 ```
-bash <(wget -qO- https://raw.githubusercontent.com/kjxv/sing-box/v1.3.28-vedio/sing-box.sh) \
+bash <(wget -qO- https://raw.githubusercontent.com/kjxv-1/sing-box/v1.3.28-vedio/sing-box.sh) \
   --LANGUAGE c \
   --CHOOSE_PROTOCOLS a \
   --START_PORT 8881 \
@@ -312,7 +312,7 @@ bash <(wget -qO- https://raw.githubusercontent.com/kjxv/sing-box/v1.3.28-vedio/s
 <br>
 
 ```
-bash <(wget -qO- https://raw.githubusercontent.com/kjxv/sing-box/v1.3.28-vedio/sing-box.sh) \
+bash <(wget -qO- https://raw.githubusercontent.com/kjxv-1/sing-box/v1.3.28-vedio/sing-box.sh) \
   --LANGUAGE c \
   --CHOOSE_PROTOCOLS a \
   --START_PORT 8881 \
@@ -334,7 +334,7 @@ bash <(wget -qO- https://raw.githubusercontent.com/kjxv/sing-box/v1.3.28-vedio/s
 <br>
 
 ```
-bash <(wget -qO- https://raw.githubusercontent.com/kjxv/sing-box/v1.3.28-vedio/sing-box.sh) \
+bash <(wget -qO- https://raw.githubusercontent.com/kjxv-1/sing-box/v1.3.28-vedio/sing-box.sh) \
   --LANGUAGE c \
   --CHOOSE_PROTOCOLS a \
   --START_PORT 8881 \
@@ -357,7 +357,7 @@ bash <(wget -qO- https://raw.githubusercontent.com/kjxv/sing-box/v1.3.28-vedio/s
 <br>
 
 ```
-bash <(wget -qO- https://raw.githubusercontent.com/kjxv/sing-box/v1.3.28-vedio/sing-box.sh) \
+bash <(wget -qO- https://raw.githubusercontent.com/kjxv-1/sing-box/v1.3.28-vedio/sing-box.sh) \
   --LANGUAGE c \
   --CHOOSE_PROTOCOLS a \
   --START_PORT 8881 \
@@ -379,7 +379,7 @@ bash <(wget -qO- https://raw.githubusercontent.com/kjxv/sing-box/v1.3.28-vedio/s
 <br>
 
 ```
-bash <(wget -qO- https://raw.githubusercontent.com/kjxv/sing-box/v1.3.28-vedio/sing-box.sh) \
+bash <(wget -qO- https://raw.githubusercontent.com/kjxv-1/sing-box/v1.3.28-vedio/sing-box.sh) \
   --LANGUAGE c \
   --CHOOSE_PROTOCOLS a \
   --START_PORT 8881 \
@@ -404,7 +404,7 @@ bash <(wget -qO- https://raw.githubusercontent.com/kjxv/sing-box/v1.3.28-vedio/s
 <br>
 
 ```
-bash <(wget -qO- https://raw.githubusercontent.com/kjxv/sing-box/v1.3.28-vedio/sing-box.sh) \
+bash <(wget -qO- https://raw.githubusercontent.com/kjxv-1/sing-box/v1.3.28-vedio/sing-box.sh) \
   --LANGUAGE c \
   --CHOOSE_PROTOCOLS a \
   --START_PORT 8881 \
@@ -428,7 +428,7 @@ bash <(wget -qO- https://raw.githubusercontent.com/kjxv/sing-box/v1.3.28-vedio/s
 <br>
 
 ```
-bash <(wget -qO- https://raw.githubusercontent.com/kjxv/sing-box/v1.3.28-vedio/sing-box.sh) \
+bash <(wget -qO- https://raw.githubusercontent.com/kjxv-1/sing-box/v1.3.28-vedio/sing-box.sh) \
   --LANGUAGE c \
   --CHOOSE_PROTOCOLS a \
   --START_PORT 8881 \
@@ -453,7 +453,7 @@ bash <(wget -qO- https://raw.githubusercontent.com/kjxv/sing-box/v1.3.28-vedio/s
 <br>
 
 ```
-bash <(wget -qO- https://raw.githubusercontent.com/kjxv/sing-box/v1.3.28-vedio/sing-box.sh) \
+bash <(wget -qO- https://raw.githubusercontent.com/kjxv-1/sing-box/v1.3.28-vedio/sing-box.sh) \
   --LANGUAGE c \
   --CHOOSE_PROTOCOLS a \
   --START_PORT 8881 \
